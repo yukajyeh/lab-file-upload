@@ -4,6 +4,9 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
   {
+    profilepic: {
+      type: String,
+    },
     username: {
       type: String,
       trim: true,

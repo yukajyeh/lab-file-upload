@@ -1,2 +1,7 @@
 <h1>{{title}}</h1>
-<p>Welcome Ironhacker!</p>
+{{#each posts}}
+  <img src='{{this.picPath}}' alt='' class='image'>
+  <p>{{this.content}}</p>
+  <p>{{this.creatorId}}</p>
+
+{{/each}}
